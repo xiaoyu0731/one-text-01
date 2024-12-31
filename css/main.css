@@ -1,0 +1,335 @@
+body{
+    margin: 0;
+    margin-top: 41.6px;
+    background-color: #92a8d1;
+}
+#top{
+    background-color: hsl(146,168,209);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px;
+}
+#top ul{
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+#top ul li{
+    display: inline-block;
+}
+#top ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    padding: 10px 40px;
+}
+#top ul li a:hover{
+    color: gold;
+}
+#top ul li.active a{
+    background-color: azure;
+    color: black;
+}
+.index.html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;  /* 水平居中 */
+    align-items: center;      /* 垂直居中 */
+    font-family: Arial, sans-serif;  /* 設置字體 */
+}
+
+/* 文字容器 */
+.center-container {
+    text-align: center;  /* 文字水平居中 */
+    padding: 20px;
+}
+
+/* 置中的文字樣式 */
+.center-text {
+    font-size: 90px;      /* 設置文字放大 */
+    font-weight: bold;    /* 設置文字加粗 */
+    color: #f7cac9;          /* 設置文字顏色 */
+}
+.container {
+    display: flex;
+    justify-content: center;  /* 水平居中 */
+    align-items: center;      /* 垂直居中 */
+    height: 100vh;            /* 讓容器填滿整個視口 */
+}
+
+/* 文字淡入效果 */
+.fade-in-text {
+    font-size: 100px;          /* 設定文字大小 */
+    color: #f7cac9;           /* 文字顏色 */
+    font-weight: bold;        /* 文字加粗 */
+    opacity: 0;               /* 初始透明度為 0 (完全透明) */
+    animation: fadeIn 5s forwards; /* 運行 fadeIn 動畫，時間為 3 秒，動畫結束後保持最後狀態 */
+}
+
+/* 定義 fadeIn 動畫 */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;  /* 動畫開始時文字完全透明 */
+    }
+    100% {
+        opacity: 1;  /* 動畫結束時文字完全可見 */
+    }
+}
+
+.box{
+    width: 980px;
+    margin: 15px auto;
+    background-color: #dec2cb;
+    padding: 20px;
+    border-radius: 20px;
+}
+.content{
+    padding: 20px 30px;
+    border: solid 1px darkblue;
+    margin-top: 20px;
+    border-radius: 15px;
+    color: darkslategray; /* 字體顏色設為深石板灰 */
+    font-family: 'Verdana', sans-serif; /* 設定字體為 Arial，無襯線字體 */
+}
+.content p:first-of-type:first-letter {
+    font-size: 2.5em !important; /* 將字母放大為 3 倍，並強制應用 */
+    color: rgb(35, 60, 60);
+}
+.pic{
+    text-align: center;
+}
+.pic img{
+    width: 800px;
+}
+#main_menu{
+    list-style: none;
+    padding-left: 0px;
+}
+#main_menu li{
+    display: inline-block;
+}
+#main_menu li a{
+    display: block;
+    padding: 10px 30px;
+    font-size: 25px;
+    color: brown;
+    text-decoration: none;
+}
+body {
+    background-image: url(../image/dm.png); /* 替換為您的圖片路徑 */
+    background-size: cover; /* 讓圖片填滿整個頁面背景 */
+    background-position: center; /* 讓圖片居中對齊 */
+    background-repeat: no-repeat; /* 防止圖片重複 */
+}
+.gif-row {
+    display: flex;
+    justify-content: center; /* 讓兩個 GIF 居中顯示 */
+    gap: 20px; /* 調整兩個 GIF 之間的間距 */
+}
+
+.gif-row img {
+    width:400px; /* 設定每個 GIF 的寬度 */
+}
+.text-container {
+    text-align: center; /* 將文字水平置中 */
+}
+.box2{
+    width: 1200px;
+    margin: 15px auto;
+    background-color: #dec2cb;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.content2 {
+    display: flex; /* 使用 Flexbox 來水平並排圖片和文字 */
+    justify-content: flex-start; /* 左對齊圖片和文字 */
+    align-items: center; /* 垂直居中對齊圖片和文字 */
+}
+
+.pic2 img {
+    width: 300px; /* 設定圖片的寬度 */
+    height: auto; /* 保持圖片的比例 */
+    margin-right: 20px; /* 設定圖片和文字之間的間距 */
+}
+
+.text2 {
+    text-align: left; /* 文字左對齊 */
+}
+.image-hover2 {
+    width: 300px; /* 固定寬度 */
+    height: 200px; /* 固定高度 */
+    object-fit: cover; /* 讓圖片自動縮放並保持比例 */
+    transition: opacity 0.3s ease; /* 平滑過渡效果 */
+}
+
+/* 當滑鼠懸停時切換圖片 */
+.image-hover:hover{
+    content: url(../image/s.coups2.jpeg); /* 設定為替換的第二張圖片 */
+}
+#image2:hover {
+    content: url(../image/jh2.jpeg);
+}
+#image3:hover {
+    content: url(../image/joshua2.jpeg);
+}
+#image4:hover {
+    content: url(../image/jun2.jpeg);
+}
+#image5:hover {
+    content: url(../image/hoshi2.jpeg);
+}
+#image6:hover {
+    content: url(../image/woownoo2.jpeg);
+}
+#image7:hover {
+    content: url(../image/woozi2.jpeg);
+}
+#image8:hover {
+    content: url(../image/dk2.jpeg);
+}
+#image9:hover {
+    content: url(../image/mg2.jpeg);
+}
+#image10:hover {
+    content: url(../image/the\ 82.jpeg);
+}
+#image11:hover {
+    content: url(../image/boo2.jpeg);
+}
+#image12:hover {
+    content: url(../image/vernon2.jpeg);
+}
+#image13:hover {
+    content: url(../image/dino2.jpeg);
+}
+.box3{
+    width: 1200px;
+    margin: 15px auto;
+    background-color: #dec2cb;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.content3 {
+    display: flex; /* 使用 Flexbox 來水平並排圖片和文字 */
+    justify-content: flex-start; /* 左對齊圖片和文字 */
+    align-items: center; /* 垂直居中對齊圖片和文字 */
+}
+
+
+.text3 {
+    text-align: left; /* 文字左對齊 */
+}
+.box4{
+    width: 1200px;
+    margin: 15px auto;
+    background-color: #dec2cb;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.content4 {
+    display: flex; /* 使用 Flexbox 來水平並排圖片和文字 */
+    justify-content: flex-start; /* 左對齊圖片和文字 */
+    align-items: center; /* 垂直居中對齊圖片和文字 */
+}
+
+.text4 {
+    text-align: left; /* 文字左對齊 */
+}
+.image-hover4 {
+    width: 300px; /* 固定寬度 */
+    height: 200px; /* 固定高度 */
+    object-fit: cover; /* 讓圖片自動縮放並保持比例 */
+    transition: opacity 0.3s ease; /* 平滑過渡效果 */
+}
+.pic-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 圖片的初始樣式和動畫設置 */
+.image-effect {
+    width: 45%; /* 每張圖片佔45%的寬度 */
+    height: auto;
+    opacity: 0; /* 初始透明 */
+    transform: scale(0.8); /* 初始縮小 */
+    animation: fadeInSlide 1s ease forwards; /* 啟動漸入放大加滑入動畫 */
+}
+
+/* 左側圖片的延遲和左側滑入效果 */
+.image-effect.left {
+    animation-delay: 0.2s;
+    transform: scale(0.8) translateX(-50px); /* 初始位置向左偏移 */
+}
+
+/* 右側圖片的延遲和右側滑入效果 */
+.image-effect.right {
+    animation-delay: 0.4s;
+    transform: scale(0.8) translateX(50px); /* 初始位置向右偏移 */
+}
+
+/* 定義動畫：漸入放大和滑入效果 */
+@keyframes fadeInSlide {
+    to {
+        opacity: 1; /* 完全顯現 */
+        transform: scale(1) translateX(0); /* 正常大小並回到中心位置 */
+    }
+}
+.gif-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* GIF 基本樣式和動畫 */
+.gif-effect {
+    width: 45%; /* 每個 GIF 佔 45% 寬度 */
+    height: auto;
+    opacity: 0; /* 初始透明 */
+    transform: scale(0.8); /* 初始縮小 */
+    animation: fadeInSlide 1s ease forwards; /* 啟動漸入、滑入動畫 */
+}
+
+/* 左側 GIF 的延遲和滑入效果 */
+.gif-effect.left {
+    animation-delay: 0.2s;
+    transform: scale(0.8) translateX(-50px); /* 初始位置向左偏移 */
+}
+
+/* 右側 GIF 的延遲和滑入效果 */
+.gif-effect.right {
+    animation-delay: 0.4s;
+    transform: scale(0.8) translateX(50px); /* 初始位置向右偏移 */
+}
+
+/* 定義動畫：漸入放大和滑入效果 */
+@keyframes fadeInSlide {
+    to {
+        opacity: 1; /* 完全顯現 */
+        transform: scale(1) translateX(0); /* 放大並回到中心位置 */
+    }
+}
+.full-width-image {
+    width: 100%;
+    overflow: hidden; /* 確保圖片充滿時不超出容器 */
+}
+
+/* 設置圖片寬度佔滿容器並自動調整高度 */
+.full-width-image img {
+    width: 100%; /* 圖片寬度佔滿容器 */
+    height: auto; /* 保持圖片比例 */
+    display: block; /* 消除底部空隙 */
+}
